@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-10",
+  "totalPacks": 3,
+  "packs": [
+    {
+      "id": "dev-essentials",
+      "name": "Developer Essentials",
+      "description": "Essential emojis for developers - bugs, deployments, code reviews, and celebrations",
+      "category": "developer",
+      "emojiCount": 25,
+      "author": "AsyncSite",
+      "tags": ["coding", "programming", "tech", "development"],
+      "preview": ["shipit", "bug", "fire", "rocket"],
+      "featured": true,
+      "createdAt": "2024-01-10",
+      "updatedAt": "2024-01-10"
+    },
+    {
+      "id": "korean-culture",
+      "name": "Korean Culture Pack",
+      "description": "Korean expressions, K-pop reactions, and cultural emojis",
+      "category": "culture",
+      "emojiCount": 20,
+      "author": "AsyncSite",
+      "tags": ["korean", "kpop", "culture", "asia"],
+      "preview": ["fighting", "heart-finger", "daebak", "omo"],
+      "featured": true,
+      "createdAt": "2024-01-10",
+      "updatedAt": "2024-01-10"
+    },
+    {
+      "id": "reactions",
+      "name": "Team Reactions",
+      "description": "Express yourself better with these reaction emojis for team communication",
+      "category": "general",
+      "emojiCount": 30,
+      "author": "AsyncSite",
+      "tags": ["reactions", "emotions", "team", "communication"],
+      "preview": ["mindblown", "facepalm", "party-parrot", "this-is-fine"],
+      "featured": false,
+      "createdAt": "2024-01-10",
+      "updatedAt": "2024-01-10"
+    }
+  ]
+}

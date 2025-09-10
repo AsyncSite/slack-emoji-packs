@@ -1,0 +1,188 @@
+{
+  "id": "reactions",
+  "name": "Team Reactions",
+  "description": "Express yourself better with these reaction emojis for team communication",
+  "version": "1.0.0",
+  "emojis": [
+    {
+      "name": "mindblown",
+      "aliases": ["amazed", "wow"],
+      "imageUrl": "/images/reactions/mindblown.png",
+      "unicode": "🤯"
+    },
+    {
+      "name": "facepalm",
+      "aliases": ["doh", "oops"],
+      "imageUrl": "/images/reactions/facepalm.png",
+      "unicode": "🤦"
+    },
+    {
+      "name": "party-parrot",
+      "aliases": ["celebrate", "dance"],
+      "imageUrl": "/images/reactions/party-parrot.png",
+      "unicode": "🦜"
+    },
+    {
+      "name": "this-is-fine",
+      "aliases": ["fine", "okay"],
+      "imageUrl": "/images/reactions/this-is-fine.png",
+      "unicode": "🔥"
+    },
+    {
+      "name": "thumbsup",
+      "aliases": ["approve", "yes"],
+      "imageUrl": "/images/reactions/thumbsup.png",
+      "unicode": "👍"
+    },
+    {
+      "name": "thumbsdown",
+      "aliases": ["disapprove", "no"],
+      "imageUrl": "/images/reactions/thumbsdown.png",
+      "unicode": "👎"
+    },
+    {
+      "name": "clapping",
+      "aliases": ["applause", "congrats"],
+      "imageUrl": "/images/reactions/clapping.png",
+      "unicode": "👏"
+    },
+    {
+      "name": "eyes",
+      "aliases": ["looking", "watching"],
+      "imageUrl": "/images/reactions/eyes.png",
+      "unicode": "👀"
+    },
+    {
+      "name": "thinking",
+      "aliases": ["hmm", "pondering"],
+      "imageUrl": "/images/reactions/thinking.png",
+      "unicode": "🤔"
+    },
+    {
+      "name": "shrug",
+      "aliases": ["dunno", "whatever"],
+      "imageUrl": "/images/reactions/shrug.png",
+      "unicode": "🤷"
+    },
+    {
+      "name": "sob",
+      "aliases": ["cry", "sad"],
+      "imageUrl": "/images/reactions/sob.png",
+      "unicode": "😭"
+    },
+    {
+      "name": "joy",
+      "aliases": ["lol", "laugh"],
+      "imageUrl": "/images/reactions/joy.png",
+      "unicode": "😂"
+    },
+    {
+      "name": "heart",
+      "aliases": ["love", "like"],
+      "imageUrl": "/images/reactions/heart.png",
+      "unicode": "❤️"
+    },
+    {
+      "name": "fire",
+      "aliases": ["hot", "lit"],
+      "imageUrl": "/images/reactions/fire.png",
+      "unicode": "🔥"
+    },
+    {
+      "name": "100",
+      "aliases": ["perfect", "hundred"],
+      "imageUrl": "/images/reactions/100.png",
+      "unicode": "💯"
+    },
+    {
+      "name": "wave",
+      "aliases": ["hello", "bye"],
+      "imageUrl": "/images/reactions/wave.png",
+      "unicode": "👋"
+    },
+    {
+      "name": "raised-hands",
+      "aliases": ["praise", "hallelujah"],
+      "imageUrl": "/images/reactions/raised-hands.png",
+      "unicode": "🙌"
+    },
+    {
+      "name": "pray",
+      "aliases": ["please", "thanks"],
+      "imageUrl": "/images/reactions/pray.png",
+      "unicode": "🙏"
+    },
+    {
+      "name": "muscle",
+      "aliases": ["strong", "power"],
+      "imageUrl": "/images/reactions/muscle.png",
+      "unicode": "💪"
+    },
+    {
+      "name": "sparkles",
+      "aliases": ["shiny", "magic"],
+      "imageUrl": "/images/reactions/sparkles.png",
+      "unicode": "✨"
+    },
+    {
+      "name": "tada",
+      "aliases": ["party", "celebration"],
+      "imageUrl": "/images/reactions/tada.png",
+      "unicode": "🎉"
+    },
+    {
+      "name": "confetti",
+      "aliases": ["celebrate", "hooray"],
+      "imageUrl": "/images/reactions/confetti.png",
+      "unicode": "🎊"
+    },
+    {
+      "name": "trophy",
+      "aliases": ["winner", "champion"],
+      "imageUrl": "/images/reactions/trophy.png",
+      "unicode": "🏆"
+    },
+    {
+      "name": "medal",
+      "aliases": ["achievement", "award"],
+      "imageUrl": "/images/reactions/medal.png",
+      "unicode": "🏅"
+    },
+    {
+      "name": "star",
+      "aliases": ["favorite", "excellent"],
+      "imageUrl": "/images/reactions/star.png",
+      "unicode": "⭐"
+    },
+    {
+      "name": "zap",
+      "aliases": ["lightning", "fast"],
+      "imageUrl": "/images/reactions/zap.png",
+      "unicode": "⚡"
+    },
+    {
+      "name": "boom",
+      "aliases": ["explode", "mind-blown"],
+      "imageUrl": "/images/reactions/boom.png",
+      "unicode": "💥"
+    },
+    {
+      "name": "sweat",
+      "aliases": ["nervous", "anxious"],
+      "imageUrl": "/images/reactions/sweat.png",
+      "unicode": "😅"
+    },
+    {
+      "name": "cold-sweat",
+      "aliases": ["scared", "worried"],
+      "imageUrl": "/images/reactions/cold-sweat.png",
+      "unicode": "😰"
+    },
+    {
+      "name": "sleepy",
+      "aliases": ["tired", "zzz"],
+      "imageUrl": "/images/reactions/sleepy.png",
+      "unicode": "😴"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "korean-culture",
+  "name": "Korean Culture Pack",
+  "description": "Korean expressions, K-pop reactions, and cultural emojis",
+  "version": "1.0.0",
+  "emojis": [
+    {
+      "name": "fighting",
+      "aliases": ["hwaiting", "cheer"],
+      "imageUrl": "/images/korean-culture/fighting.png",
+      "unicode": "💪"
+    },
+    {
+      "name": "heart-finger",
+      "aliases": ["saranghae", "love"],
+      "imageUrl": "/images/korean-culture/heart-finger.png",
+      "unicode": "🫰"
+    },
+    {
+      "name": "daebak",
+      "aliases": ["awesome", "amazing"],
+      "imageUrl": "/images/korean-culture/daebak.png",
+      "unicode": "🤯"
+    },
+    {
+      "name": "omo",
+      "aliases": ["omg", "surprised"],
+      "imageUrl": "/images/korean-culture/omo.png",
+      "unicode": "😱"
+    },
+    {
+      "name": "aegyo",
+      "aliases": ["cute", "kawaii"],
+      "imageUrl": "/images/korean-culture/aegyo.png",
+      "unicode": "🥺"
+    },
+    {
+      "name": "kkkk",
+      "aliases": ["lol", "haha"],
+      "imageUrl": "/images/korean-culture/kkkk.png",
+      "unicode": "😂"
+    },
+    {
+      "name": "jjang",
+      "aliases": ["best", "thumbsup"],
+      "imageUrl": "/images/korean-culture/jjang.png",
+      "unicode": "👍"
+    },
+    {
+      "name": "heol",
+      "aliases": ["shocked", "what"],
+      "imageUrl": "/images/korean-culture/heol.png",
+      "unicode": "😨"
+    },
+    {
+      "name": "kimchi",
+      "aliases": ["food", "korean"],
+      "imageUrl": "/images/korean-culture/kimchi.png",
+      "unicode": "🥬"
+    },
+    {
+      "name": "soju",
+      "aliases": ["drink", "cheers"],
+      "imageUrl": "/images/korean-culture/soju.png",
+      "unicode": "🍶"
+    },
+    {
+      "name": "hanbok",
+      "aliases": ["traditional", "dress"],
+      "imageUrl": "/images/korean-culture/hanbok.png",
+      "unicode": "👘"
+    },
+    {
+      "name": "bibimbap",
+      "aliases": ["food", "meal"],
+      "imageUrl": "/images/korean-culture/bibimbap.png",
+      "unicode": "🍜"
+    },
+    {
+      "name": "oppa",
+      "aliases": ["brother", "hyung"],
+      "imageUrl": "/images/korean-culture/oppa.png",
+      "unicode": "👨"
+    },
+    {
+      "name": "noona",
+      "aliases": ["sister", "unnie"],
+      "imageUrl": "/images/korean-culture/noona.png",
+      "unicode": "👩"
+    },
+    {
+      "name": "sarang",
+      "aliases": ["love", "heart"],
+      "imageUrl": "/images/korean-culture/sarang.png",
+      "unicode": "❤️"
+    },
+    {
+      "name": "gwiyomi",
+      "aliases": ["cutie", "adorable"],
+      "imageUrl": "/images/korean-culture/gwiyomi.png",
+      "unicode": "😊"
+    },
+    {
+      "name": "ppalli",
+      "aliases": ["hurry", "fast"],
+      "imageUrl": "/images/korean-culture/ppalli.png",
+      "unicode": "⚡"
+    },
+    {
+      "name": "annyeong",
+      "aliases": ["hello", "hi"],
+      "imageUrl": "/images/korean-culture/annyeong.png",
+      "unicode": "👋"
+    },
+    {
+      "name": "kamsahamnida",
+      "aliases": ["thanks", "thankyou"],
+      "imageUrl": "/images/korean-culture/kamsahamnida.png",
+      "unicode": "🙏"
+    },
+    {
+      "name": "mianhae",
+      "aliases": ["sorry", "apologize"],
+      "imageUrl": "/images/korean-culture/mianhae.png",
+      "unicode": "😔"
+    }
+  ]
+}

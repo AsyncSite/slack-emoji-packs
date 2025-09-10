@@ -1,0 +1,158 @@
+{
+  "id": "dev-essentials",
+  "name": "Developer Essentials",
+  "description": "Essential emojis for developers - bugs, deployments, code reviews, and celebrations",
+  "version": "1.0.0",
+  "emojis": [
+    {
+      "name": "shipit",
+      "aliases": ["deploy", "ship"],
+      "imageUrl": "/images/dev-essentials/shipit.png",
+      "unicode": "🚀"
+    },
+    {
+      "name": "bug",
+      "aliases": ["issue", "error"],
+      "imageUrl": "/images/dev-essentials/bug.png",
+      "unicode": "🐛"
+    },
+    {
+      "name": "fire",
+      "aliases": ["urgent", "emergency", "hotfix"],
+      "imageUrl": "/images/dev-essentials/fire.png",
+      "unicode": "🔥"
+    },
+    {
+      "name": "rocket",
+      "aliases": ["launch", "release"],
+      "imageUrl": "/images/dev-essentials/rocket.png",
+      "unicode": "🚀"
+    },
+    {
+      "name": "code-review",
+      "aliases": ["review", "pr"],
+      "imageUrl": "/images/dev-essentials/code-review.png",
+      "unicode": "👀"
+    },
+    {
+      "name": "merged",
+      "aliases": ["merge", "approved"],
+      "imageUrl": "/images/dev-essentials/merged.png",
+      "unicode": "✅"
+    },
+    {
+      "name": "debugging",
+      "aliases": ["debug", "fixing"],
+      "imageUrl": "/images/dev-essentials/debugging.png",
+      "unicode": "🔍"
+    },
+    {
+      "name": "coffee",
+      "aliases": ["break", "caffeine"],
+      "imageUrl": "/images/dev-essentials/coffee.png",
+      "unicode": "☕"
+    },
+    {
+      "name": "working-from-home",
+      "aliases": ["wfh", "remote"],
+      "imageUrl": "/images/dev-essentials/working-from-home.png",
+      "unicode": "🏠"
+    },
+    {
+      "name": "database",
+      "aliases": ["db", "data"],
+      "imageUrl": "/images/dev-essentials/database.png",
+      "unicode": "🗄️"
+    },
+    {
+      "name": "api",
+      "aliases": ["endpoint", "rest"],
+      "imageUrl": "/images/dev-essentials/api.png",
+      "unicode": "🔌"
+    },
+    {
+      "name": "docker",
+      "aliases": ["container", "devops"],
+      "imageUrl": "/images/dev-essentials/docker.png",
+      "unicode": "🐳"
+    },
+    {
+      "name": "git",
+      "aliases": ["version", "vcs"],
+      "imageUrl": "/images/dev-essentials/git.png",
+      "unicode": "📦"
+    },
+    {
+      "name": "javascript",
+      "aliases": ["js", "node"],
+      "imageUrl": "/images/dev-essentials/javascript.png",
+      "unicode": "📜"
+    },
+    {
+      "name": "python",
+      "aliases": ["py", "snake"],
+      "imageUrl": "/images/dev-essentials/python.png",
+      "unicode": "🐍"
+    },
+    {
+      "name": "react",
+      "aliases": ["frontend", "ui"],
+      "imageUrl": "/images/dev-essentials/react.png",
+      "unicode": "⚛️"
+    },
+    {
+      "name": "loading",
+      "aliases": ["spinner", "wait"],
+      "imageUrl": "/images/dev-essentials/loading.png",
+      "unicode": "⏳"
+    },
+    {
+      "name": "done",
+      "aliases": ["complete", "finished"],
+      "imageUrl": "/images/dev-essentials/done.png",
+      "unicode": "✔️"
+    },
+    {
+      "name": "failed",
+      "aliases": ["error", "broken"],
+      "imageUrl": "/images/dev-essentials/failed.png",
+      "unicode": "❌"
+    },
+    {
+      "name": "warning",
+      "aliases": ["caution", "alert"],
+      "imageUrl": "/images/dev-essentials/warning.png",
+      "unicode": "⚠️"
+    },
+    {
+      "name": "idea",
+      "aliases": ["lightbulb", "eureka"],
+      "imageUrl": "/images/dev-essentials/idea.png",
+      "unicode": "💡"
+    },
+    {
+      "name": "laptop",
+      "aliases": ["computer", "dev"],
+      "imageUrl": "/images/dev-essentials/laptop.png",
+      "unicode": "💻"
+    },
+    {
+      "name": "terminal",
+      "aliases": ["console", "cli"],
+      "imageUrl": "/images/dev-essentials/terminal.png",
+      "unicode": "⌨️"
+    },
+    {
+      "name": "infinity",
+      "aliases": ["loop", "forever"],
+      "imageUrl": "/images/dev-essentials/infinity.png",
+      "unicode": "♾️"
+    },
+    {
+      "name": "party",
+      "aliases": ["celebrate", "success"],
+      "imageUrl": "/images/dev-essentials/party.png",
+      "unicode": "🎉"
+    }
+  ]
+}
