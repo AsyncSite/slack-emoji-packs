@@ -1,8 +1,30 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2025-09-11",
-  "totalPacks": 6,
+  "totalPacks": 7,
   "packs": [
+    {
+      "id": "korean-words",
+      "name": "Korean Words",
+      "description": "A collection of common Korean words and reactions.",
+      "category": "culture",
+      "emojiCount": 38,
+      "author": "AsyncSite",
+      "tags": [
+        "korean",
+        "words",
+        "reactions"
+      ],
+      "preview": [
+        "굿",
+        "확인",
+        "화이팅",
+        "ㅋㅋㅋ_ㅋㅋㅋ"
+      ],
+      "featured": true,
+      "createdAt": "2025-09-11",
+      "updatedAt": "2025-09-11"
+    },
     {
       "id": "dev-essentials",
       "name": "Developer Essentials",
