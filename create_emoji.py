@@ -345,11 +345,41 @@ def create_terminal_emoji():
     
     return img
 
+def create_warning_emoji():
+    """Create a warning emoji - yellow triangle with exclamation mark"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Warning triangle (yellow/amber)
+    triangle_color = (255, 193, 7)  # Bootstrap warning yellow
+    triangle_points = [
+        (64, 20),   # Top
+        (95, 85),   # Bottom right
+        (33, 85),   # Bottom left
+    ]
+    draw.polygon(triangle_points, fill=triangle_color)
+    
+    # Black border for triangle
+    border_color = (0, 0, 0)
+    draw.polygon(triangle_points, outline=border_color, width=3)
+    
+    # Exclamation mark (black)
+    exclamation_color = (0, 0, 0)
+    
+    # Exclamation line (vertical rectangle)
+    draw.rectangle([60, 40, 68, 65], fill=exclamation_color)
+    
+    # Exclamation dot
+    draw.ellipse([59, 70, 69, 80], fill=exclamation_color)
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create terminal emoji
-    terminal_img = create_terminal_emoji()
-    terminal_img.save(os.path.join(output_dir, "terminal.png"))
-    print("Created: terminal.png")
+    # Create warning emoji
+    warning_img = create_warning_emoji()
+    warning_img.save(os.path.join(output_dir, "warning.png"))
+    print("Created: warning.png")
