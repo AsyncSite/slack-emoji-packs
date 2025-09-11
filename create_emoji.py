@@ -244,11 +244,62 @@ def create_loading_emoji():
     
     return img
 
+def create_idea_emoji():
+    """Create an idea emoji - light bulb"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Light bulb glass (yellow for lit state)
+    bulb_color = (255, 223, 0)  # Golden yellow
+    draw.ellipse([35, 20, 93, 78], fill=bulb_color)
+    
+    # Light rays (lines radiating from bulb)
+    ray_color = (255, 215, 0)  # Gold
+    # Top rays
+    draw.line([64, 15, 64, 5], fill=ray_color, width=3)
+    # Top-right
+    draw.line([80, 25, 90, 15], fill=ray_color, width=3)
+    # Right
+    draw.line([95, 49, 105, 49], fill=ray_color, width=3)
+    # Bottom-right
+    draw.line([80, 73, 90, 83], fill=ray_color, width=3)
+    # Top-left
+    draw.line([48, 25, 38, 15], fill=ray_color, width=3)
+    # Left
+    draw.line([33, 49, 23, 49], fill=ray_color, width=3)
+    # Bottom-left
+    draw.line([48, 73, 38, 83], fill=ray_color, width=3)
+    
+    # Filament inside bulb (orange wavy line)
+    filament_color = (255, 140, 0)  # Dark orange
+    # Draw zigzag filament
+    draw.line([54, 40, 58, 45], fill=filament_color, width=2)
+    draw.line([58, 45, 62, 40], fill=filament_color, width=2)
+    draw.line([62, 40, 66, 45], fill=filament_color, width=2)
+    draw.line([66, 45, 70, 40], fill=filament_color, width=2)
+    draw.line([70, 40, 74, 45], fill=filament_color, width=2)
+    
+    # Base of bulb (dark gray)
+    base_color = (105, 105, 105)
+    draw.rectangle([50, 75, 78, 85], fill=base_color)
+    
+    # Screw threads on base (darker gray lines)
+    thread_color = (70, 70, 70)
+    draw.line([50, 78, 78, 78], fill=thread_color, width=1)
+    draw.line([50, 81, 78, 81], fill=thread_color, width=1)
+    draw.line([50, 84, 78, 84], fill=thread_color, width=1)
+    
+    # Bottom contact point (darker gray)
+    draw.ellipse([58, 85, 70, 90], fill=thread_color)
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create loading emoji
-    loading_img = create_loading_emoji()
-    loading_img.save(os.path.join(output_dir, "loading.png"))
-    print("Created: loading.png")
+    # Create idea emoji
+    idea_img = create_idea_emoji()
+    idea_img.save(os.path.join(output_dir, "idea.png"))
+    print("Created: idea.png")
