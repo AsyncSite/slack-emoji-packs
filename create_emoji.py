@@ -412,11 +412,146 @@ def create_python_emoji():
     
     return img
 
+def create_javascript_emoji():
+    """Create a JavaScript emoji - JS logo"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # JavaScript yellow background
+    js_yellow = (247, 223, 30)
+    draw.rounded_rectangle([25, 25, 103, 103], radius=8, fill=js_yellow)
+    
+    # JS letters (black)
+    text_color = (0, 0, 0)
+    
+    # J letter (simplified as rectangles)
+    draw.rectangle([45, 45, 55, 75], fill=text_color)  # Vertical line
+    draw.rectangle([35, 70, 55, 80], fill=text_color)  # Bottom curve
+    draw.ellipse([33, 68, 45, 80], fill=text_color)    # Curve
+    
+    # S letter (simplified as curves)
+    # Top curve
+    draw.arc([65, 45, 85, 60], start=180, end=0, fill=text_color, width=5)
+    # Middle
+    draw.rectangle([68, 57, 82, 63], fill=text_color)
+    # Bottom curve
+    draw.arc([65, 60, 85, 75], start=0, end=180, fill=text_color, width=5)
+    
+    return img
+
+def create_react_emoji():
+    """Create a React emoji - React logo atom"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # React blue
+    react_blue = (97, 218, 251)
+    
+    # Center nucleus
+    draw.ellipse([58, 58, 70, 70], fill=react_blue)
+    
+    # Electron orbits (3 ellipses at different angles)
+    # Horizontal orbit
+    draw.ellipse([25, 55, 103, 73], outline=react_blue, width=3)
+    
+    # Diagonal orbit 1 (top-left to bottom-right)
+    # Draw as multiple arcs to simulate rotation
+    draw.arc([35, 35, 93, 93], start=30, end=120, fill=react_blue, width=3)
+    draw.arc([35, 35, 93, 93], start=210, end=300, fill=react_blue, width=3)
+    
+    # Diagonal orbit 2 (top-right to bottom-left)
+    draw.arc([35, 35, 93, 93], start=120, end=210, fill=react_blue, width=3)
+    draw.arc([35, 35, 93, 93], start=300, end=30, fill=react_blue, width=3)
+    
+    return img
+
+def create_git_emoji():
+    """Create a Git emoji - Git logo branch"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Git orange-red
+    git_color = (240, 80, 50)
+    
+    # Main branch line (vertical)
+    draw.rectangle([60, 30, 68, 98], fill=git_color)
+    
+    # Branch nodes (circles)
+    # Top node
+    draw.ellipse([56, 25, 72, 41], fill=git_color)
+    
+    # Middle node (branch point)
+    draw.ellipse([56, 55, 72, 71], fill=git_color)
+    
+    # Bottom node
+    draw.ellipse([56, 90, 72, 106], fill=git_color)
+    
+    # Side branch
+    draw.line([68, 63, 85, 45], fill=git_color, width=8)
+    
+    # Side branch node
+    draw.ellipse([80, 38, 96, 54], fill=git_color)
+    
+    return img
+
+def create_docker_emoji():
+    """Create a Docker emoji - Docker whale"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Docker blue
+    docker_blue = (0, 157, 224)
+    
+    # Whale body (simplified)
+    body_points = [
+        (30, 65),   # Left
+        (35, 55),   # Top-left
+        (85, 55),   # Top-right
+        (95, 65),   # Right
+        (90, 80),   # Bottom-right
+        (35, 80),   # Bottom-left
+    ]
+    draw.polygon(body_points, fill=docker_blue)
+    
+    # Containers on whale's back (rectangles)
+    container_color = (0, 130, 200)
+    # Container 1
+    draw.rectangle([40, 45, 50, 55], fill=container_color)
+    # Container 2
+    draw.rectangle([55, 40, 65, 55], fill=container_color)
+    # Container 3
+    draw.rectangle([70, 45, 80, 55], fill=container_color)
+    
+    # Whale tail
+    tail_points = [
+        (25, 70),   # Connection
+        (20, 65),   # Top
+        (15, 75),   # Bottom
+    ]
+    draw.polygon(tail_points, fill=docker_blue)
+    
+    # Eye (white dot)
+    draw.ellipse([85, 62, 89, 66], fill='white')
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create python emoji
-    python_img = create_python_emoji()
-    python_img.save(os.path.join(output_dir, "python.png"))
-    print("Created: python.png")
+    # Create all emojis
+    emojis = [
+        ("javascript", create_javascript_emoji),
+        ("react", create_react_emoji),
+        ("git", create_git_emoji),
+        ("docker", create_docker_emoji),
+    ]
+    
+    for name, create_func in emojis:
+        img = create_func()
+        img.save(os.path.join(output_dir, f"{name}.png"))
+        print(f"Created: {name}.png")
