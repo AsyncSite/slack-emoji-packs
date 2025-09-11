@@ -17,10 +17,10 @@
         "development"
       ],
       "preview": [
-        "shipit",
-        "bug",
-        "fire",
-        "rocket"
+        "shipit.png",
+        "bug.png",
+        "fire.png",
+        "rocket.png"
       ],
       "featured": true,
       "createdAt": "2024-01-10",
@@ -40,10 +40,10 @@
         "asia"
       ],
       "preview": [
-        "fighting",
-        "heart-finger",
-        "daebak",
-        "omo"
+        "fighting.png",
+        "heart-finger.png",
+        "daebak.png",
+        "omo.png"
       ],
       "featured": true,
       "createdAt": "2024-01-10",
@@ -63,10 +63,10 @@
         "workplace"
       ],
       "preview": [
-        "yagun",
-        "hoesik",
-        "kaltwae",
-        "maknae"
+        "yagun.png",
+        "hoesik.png",
+        "kaltwae.png",
+        "maknae.png"
       ],
       "featured": true,
       "createdAt": "2025-01-11",
@@ -86,10 +86,10 @@
         "communication"
       ],
       "preview": [
-        "mindblown",
-        "facepalm",
-        "party-parrot",
-        "this-is-fine"
+        "mindblown.png",
+        "facepalm.png",
+        "party-parrot.png",
+        "this-is-fine.png"
       ],
       "featured": false,
       "createdAt": "2024-01-10",
@@ -109,10 +109,10 @@
         "funding"
       ],
       "preview": [
-        "unicorn",
-        "burn_rate",
-        "rocket_launch",
-        "loading_spinner"
+        "unicorn.png",
+        "burn_rate.png",
+        "rocket_launch.gif",
+        "loading_spinner.gif"
       ],
       "featured": true,
       "createdAt": "2025-01-11",
@@ -132,10 +132,10 @@
         "zoom"
       ],
       "preview": [
-        "pajamas",
-        "zoom_fatigue",
-        "pet_cameo",
-        "mute_yourself"
+        "pajamas.png",
+        "zoom_fatigue.png",
+        "pet_cameo.png",
+        "mute_yourself.png"
       ],
       "featured": true,
       "createdAt": "2025-01-11",

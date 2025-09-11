@@ -11,21 +11,21 @@
     "workplace"
   ],
   "emojis": [
-    "annual_leave",
-    "hoesik",
-    "kaltwae",
-    "maknae",
-    "salary_day",
-    "sangsa",
-    "team_building",
-    "yagun"
+    "annual_leave.png",
+    "hoesik.png",
+    "kaltwae.png",
+    "maknae.png",
+    "salary_day.png",
+    "sangsa.png",
+    "team_building.png",
+    "yagun.png"
   ],
   "emojiCount": 8,
   "preview": [
-    "yagun",
-    "hoesik",
-    "kaltwae",
-    "maknae"
+    "yagun.png",
+    "hoesik.png",
+    "kaltwae.png",
+    "maknae.png"
   ],
   "featured": true,
   "createdAt": "2025-01-11",

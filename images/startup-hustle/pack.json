@@ -11,26 +11,26 @@
     "funding"
   ],
   "emojis": [
-    "bootstrapping",
-    "burn_rate",
-    "exit_strategy",
-    "growth_hacking",
-    "ipo",
-    "loading_spinner",
-    "mvp",
-    "party_parrot",
-    "pivot",
-    "rocket_launch",
-    "runway",
-    "series_a",
-    "unicorn"
+    "bootstrapping.png",
+    "burn_rate.png",
+    "exit_strategy.png",
+    "growth_hacking.png",
+    "ipo.png",
+    "loading_spinner.gif",
+    "mvp.png",
+    "party_parrot.gif",
+    "pivot.png",
+    "rocket_launch.gif",
+    "runway.png",
+    "series_a.png",
+    "unicorn.png"
   ],
   "emojiCount": 13,
   "preview": [
-    "unicorn",
-    "burn_rate",
-    "rocket_launch",
-    "loading_spinner"
+    "unicorn.png",
+    "burn_rate.png",
+    "rocket_launch.gif",
+    "loading_spinner.gif"
   ],
   "featured": true,
   "createdAt": "2025-01-11",

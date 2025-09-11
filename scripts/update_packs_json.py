@@ -11,11 +11,11 @@ from datetime import datetime
 from typing import Dict, List, Any
 
 def get_emoji_files(pack_dir: Path) -> List[str]:
-    """Get list of emoji files in a pack directory."""
+    """Get list of emoji files in a pack directory with extensions."""
     emoji_files = []
     for file in pack_dir.iterdir():
         if file.suffix.lower() in ['.png', '.gif']:
-            emoji_files.append(file.stem)
+            emoji_files.append(file.name)  # Include full filename with extension
     return sorted(emoji_files)
 
 def load_existing_packs_json() -> Dict[str, Any]:
@@ -64,10 +64,22 @@ def load_pack_metadata(pack_dir: Path, pack_id: str) -> Dict[str, Any]:
     return metadata
 
 def generate_pack_preview(emoji_files: List[str], existing_preview: List[str] = None) -> List[str]:
-    """Generate preview emoji list for a pack."""
+    """Generate preview emoji list for a pack with extensions."""
     if existing_preview and len(existing_preview) >= 4:
-        # Keep existing preview if it has valid emojis
-        valid_preview = [e for e in existing_preview if e in emoji_files]
+        # Check if existing preview has extensions, if not add them
+        valid_preview = []
+        for preview_item in existing_preview:
+            if '.' in preview_item:
+                # Already has extension, check if file exists
+                if preview_item in emoji_files:
+                    valid_preview.append(preview_item)
+            else:
+                # No extension, try to find matching file
+                for emoji_file in emoji_files:
+                    if emoji_file.startswith(preview_item + '.'):
+                        valid_preview.append(emoji_file)
+                        break
+        
         if len(valid_preview) >= 4:
             return valid_preview[:4]
     
@@ -81,7 +93,8 @@ def generate_pack_preview(emoji_files: List[str], existing_preview: List[str] = 
     # Add priority emojis first
     for name in priority_names:
         for emoji in emoji_files:
-            if name in emoji.lower() and emoji not in preview:
+            emoji_name = emoji.rsplit('.', 1)[0]  # Get name without extension
+            if name in emoji_name.lower() and emoji not in preview:
                 preview.append(emoji)
                 if len(preview) >= 4:
                     return preview
