@@ -539,16 +539,294 @@ def create_docker_emoji():
     
     return img
 
+def create_api_emoji():
+    """Create an API emoji - network/API connection"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Purple color for API
+    api_color = (147, 51, 234)  # Purple
+    
+    # Central server/API box
+    draw.rounded_rectangle([48, 48, 80, 80], radius=5, fill=api_color)
+    
+    # Connection nodes around the center
+    node_color = (168, 85, 247)  # Lighter purple
+    line_color = (200, 150, 255)  # Even lighter purple
+    
+    # Top node
+    draw.ellipse([58, 20, 70, 32], fill=node_color)
+    draw.line([64, 32, 64, 48], fill=line_color, width=3)
+    
+    # Right node
+    draw.ellipse([96, 58, 108, 70], fill=node_color)
+    draw.line([80, 64, 96, 64], fill=line_color, width=3)
+    
+    # Bottom node
+    draw.ellipse([58, 96, 70, 108], fill=node_color)
+    draw.line([64, 80, 64, 96], fill=line_color, width=3)
+    
+    # Left node
+    draw.ellipse([20, 58, 32, 70], fill=node_color)
+    draw.line([32, 64, 48, 64], fill=line_color, width=3)
+    
+    # API text (simplified as dots in center)
+    draw.ellipse([56, 56, 60, 60], fill='white')
+    draw.ellipse([62, 56, 66, 60], fill='white')
+    draw.ellipse([68, 56, 72, 60], fill='white')
+    
+    draw.ellipse([56, 68, 60, 72], fill='white')
+    draw.ellipse([62, 68, 66, 72], fill='white')
+    draw.ellipse([68, 68, 72, 72], fill='white')
+    
+    return img
+
+def create_database_emoji():
+    """Create a database emoji - cylinder stack"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Database blue-gray
+    db_color = (52, 73, 94)
+    db_light = (69, 90, 111)
+    
+    # Draw three cylinder segments for database
+    cylinder_height = 25
+    
+    # Top cylinder
+    # Top ellipse
+    draw.ellipse([35, 25, 93, 40], fill=db_light)
+    # Body
+    draw.rectangle([35, 32, 93, 50], fill=db_color)
+    # Bottom ellipse (partial, hidden)
+    draw.arc([35, 42, 93, 58], start=0, end=180, fill=db_color, width=2)
+    
+    # Middle cylinder
+    # Body
+    draw.rectangle([35, 50, 93, 68], fill=db_color)
+    # Bottom ellipse (partial, hidden)
+    draw.arc([35, 60, 93, 76], start=0, end=180, fill=db_color, width=2)
+    
+    # Bottom cylinder
+    # Body
+    draw.rectangle([35, 68, 93, 86], fill=db_color)
+    # Bottom ellipse
+    draw.ellipse([35, 78, 93, 94], fill=db_color)
+    
+    # Data lines (to show it's a database)
+    line_color = (150, 170, 190)
+    draw.line([45, 38, 83, 38], fill=line_color, width=2)
+    draw.line([45, 56, 83, 56], fill=line_color, width=2)
+    draw.line([45, 74, 83, 74], fill=line_color, width=2)
+    
+    return img
+
+def create_merged_emoji():
+    """Create a merged emoji - git merge symbol"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Green for successful merge
+    merge_color = (40, 167, 69)  # Bootstrap success green
+    
+    # Main branch (vertical line on left)
+    draw.rectangle([35, 30, 43, 98], fill=merge_color)
+    
+    # Branch that merges (diagonal from top right to center)
+    draw.line([85, 30, 43, 64], fill=merge_color, width=8)
+    
+    # Commit nodes
+    # Top left (main branch)
+    draw.ellipse([31, 26, 47, 42], fill=merge_color)
+    
+    # Top right (feature branch)
+    draw.ellipse([81, 26, 97, 42], fill=merge_color)
+    
+    # Merge point
+    draw.ellipse([35, 56, 51, 72], fill=merge_color)
+    
+    # Bottom (after merge)
+    draw.ellipse([31, 90, 47, 106], fill=merge_color)
+    
+    # Check mark in merge point to show success
+    check_color = 'white'
+    draw.line([38, 64, 41, 67], fill=check_color, width=2)
+    draw.line([41, 67, 47, 61], fill=check_color, width=2)
+    
+    return img
+
+def create_party_emoji():
+    """Create a party emoji - party popper"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Party popper cone (gold)
+    cone_color = (255, 193, 7)  # Gold
+    cone_points = [
+        (30, 80),   # Bottom left
+        (50, 85),   # Bottom right
+        (75, 35),   # Top
+    ]
+    draw.polygon(cone_points, fill=cone_color)
+    
+    # Confetti pieces (various colors)
+    confetti_colors = [
+        (255, 0, 127),    # Pink
+        (0, 191, 255),    # Deep sky blue
+        (50, 205, 50),    # Lime green
+        (255, 215, 0),    # Gold
+        (147, 112, 219),  # Medium purple
+        (255, 69, 0),     # Orange red
+    ]
+    
+    # Draw confetti pieces
+    draw.rectangle([75, 25, 82, 32], fill=confetti_colors[0])
+    draw.rectangle([85, 30, 92, 37], fill=confetti_colors[1])
+    draw.rectangle([70, 40, 77, 47], fill=confetti_colors[2])
+    draw.rectangle([80, 45, 87, 52], fill=confetti_colors[3])
+    draw.rectangle([90, 40, 97, 47], fill=confetti_colors[4])
+    draw.rectangle([65, 30, 72, 37], fill=confetti_colors[5])
+    
+    # Streamers (curved lines)
+    draw.arc([75, 35, 95, 55], start=180, end=270, fill=confetti_colors[0], width=3)
+    draw.arc([65, 25, 85, 45], start=270, end=0, fill=confetti_colors[1], width=3)
+    
+    # Stars
+    star_color = (255, 223, 0)  # Golden yellow
+    # Small star at top
+    draw.polygon([(95, 25), (97, 30), (102, 30), (98, 33), (100, 38), 
+                  (95, 35), (90, 38), (92, 33), (88, 30), (93, 30)], fill=star_color)
+    
+    return img
+
+def create_laptop_emoji():
+    """Create a laptop emoji - laptop computer"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Laptop screen (dark gray frame)
+    screen_frame = (64, 64, 64)
+    draw.rounded_rectangle([25, 25, 103, 75], radius=3, fill=screen_frame)
+    
+    # Screen display (blue)
+    screen_color = (0, 123, 255)  # Blue screen
+    draw.rectangle([30, 30, 98, 70], fill=screen_color)
+    
+    # Code on screen (simplified as lines)
+    code_color = (255, 255, 255)  # White text
+    draw.rectangle([35, 35, 65, 37], fill=code_color)
+    draw.rectangle([35, 40, 80, 42], fill=code_color)
+    draw.rectangle([35, 45, 70, 47], fill=code_color)
+    draw.rectangle([35, 50, 85, 52], fill=code_color)
+    draw.rectangle([35, 55, 75, 57], fill=code_color)
+    draw.rectangle([35, 60, 90, 62], fill=code_color)
+    
+    # Laptop base/keyboard (silver)
+    base_color = (192, 192, 192)
+    # Base trapezoid
+    base_points = [
+        (20, 75),    # Top left
+        (108, 75),   # Top right
+        (113, 90),   # Bottom right
+        (15, 90),    # Bottom left
+    ]
+    draw.polygon(base_points, fill=base_color)
+    
+    # Trackpad (darker gray)
+    trackpad_color = (128, 128, 128)
+    draw.rectangle([54, 80, 74, 86], fill=trackpad_color)
+    
+    return img
+
+def create_infinity_emoji():
+    """Create an infinity emoji - infinity symbol"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Infinity color (gradient blue to purple effect using single color)
+    infinity_color = (138, 43, 226)  # Blue violet
+    
+    # Draw infinity symbol as two circles connected
+    thickness = 8
+    
+    # Left loop
+    draw.arc([25, 45, 65, 85], start=30, end=330, fill=infinity_color, width=thickness)
+    
+    # Right loop
+    draw.arc([63, 45, 103, 85], start=210, end=150, fill=infinity_color, width=thickness)
+    
+    # Connect the loops with diagonal lines
+    draw.line([48, 52, 80, 78], fill=infinity_color, width=thickness)
+    draw.line([48, 78, 80, 52], fill=infinity_color, width=thickness)
+    
+    return img
+
+def create_working_from_home_emoji():
+    """Create a working from home emoji - house with laptop"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # House outline (brown)
+    house_color = (139, 69, 19)  # Saddle brown
+    
+    # Roof (triangle)
+    roof_points = [
+        (64, 20),   # Top
+        (95, 50),   # Right
+        (33, 50),   # Left
+    ]
+    draw.polygon(roof_points, fill=house_color)
+    
+    # House walls (beige)
+    wall_color = (245, 222, 179)  # Wheat
+    draw.rectangle([38, 50, 90, 95], fill=wall_color)
+    
+    # Door (darker brown)
+    door_color = (101, 67, 33)  # Dark brown
+    draw.rectangle([56, 70, 72, 95], fill=door_color)
+    
+    # Window with laptop inside (showing WFH)
+    window_color = (135, 206, 235)  # Sky blue
+    draw.rectangle([42, 55, 58, 70], fill=window_color)
+    
+    # Laptop in window (small, simplified)
+    laptop_color = (64, 64, 64)  # Dark gray
+    draw.rectangle([45, 62, 55, 68], fill=laptop_color)
+    # Screen glow
+    draw.rectangle([46, 63, 54, 67], fill=(255, 255, 255))
+    
+    # Window 2 (right side)
+    draw.rectangle([70, 55, 86, 70], fill=window_color)
+    
+    # WiFi symbol above house (to show connectivity)
+    wifi_color = (0, 123, 255)  # Blue
+    # WiFi waves
+    draw.arc([54, 5, 74, 25], start=200, end=340, fill=wifi_color, width=2)
+    draw.arc([58, 8, 70, 20], start=200, end=340, fill=wifi_color, width=2)
+    draw.ellipse([62, 12, 66, 16], fill=wifi_color)
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create all emojis
+    # Create all remaining emojis
     emojis = [
-        ("javascript", create_javascript_emoji),
-        ("react", create_react_emoji),
-        ("git", create_git_emoji),
-        ("docker", create_docker_emoji),
+        ("api", create_api_emoji),
+        ("database", create_database_emoji),
+        ("merged", create_merged_emoji),
+        ("party", create_party_emoji),
+        ("laptop", create_laptop_emoji),
+        ("infinity", create_infinity_emoji),
+        ("working-from-home", create_working_from_home_emoji),
     ]
     
     for name, create_func in emojis:
