@@ -208,11 +208,47 @@ def create_failed_emoji():
     
     return img
 
+def create_loading_emoji():
+    """Create a loading emoji - circular loading spinner"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Draw loading spinner segments
+    center_x, center_y = 64, 64
+    radius = 35
+    thickness = 8
+    
+    # Define colors for each segment (gradient from dark to light blue)
+    colors = [
+        (0, 123, 255),      # Bright blue
+        (50, 150, 255),     # Lighter blue
+        (100, 180, 255),    # Even lighter
+        (150, 200, 255),    # Light blue
+        (200, 220, 255),    # Very light blue
+        (220, 230, 255),    # Almost white blue
+        (240, 245, 255),    # Very faint blue
+        (250, 250, 255),    # Nearly invisible
+    ]
+    
+    # Draw 8 segments of the spinner
+    for i in range(8):
+        start_angle = i * 45
+        end_angle = start_angle + 30
+        
+        # Draw arc segment
+        bbox = [center_x - radius, center_y - radius, 
+                center_x + radius, center_y + radius]
+        draw.arc(bbox, start=start_angle, end=end_angle, 
+                fill=colors[i], width=thickness)
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create failed emoji
-    failed_img = create_failed_emoji()
-    failed_img.save(os.path.join(output_dir, "failed.png"))
-    print("Created: failed.png")
+    # Create loading emoji
+    loading_img = create_loading_emoji()
+    loading_img.save(os.path.join(output_dir, "loading.png"))
+    print("Created: loading.png")
