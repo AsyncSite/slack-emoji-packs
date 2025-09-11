@@ -1,80 +1,157 @@
 # Contributing to Slack Emoji Packs
 
-Thank you for your interest in contributing to our Slack emoji pack collection!
+Thank you for your interest in contributing to our Slack emoji pack collection! We welcome contributions from the community.
 
-## How to Contribute
-
-### Adding a New Emoji to an Existing Pack
+## 🎯 Quick Start
 
 1. Fork this repository
-2. Add your emoji image to `images/[pack-id]/`
-3. Update the pack's `pack.json` file with emoji metadata
+2. Add your emoji files to `images/[pack-name]/`
+3. Run validation: `python scripts/validate_pack.py`
 4. Submit a Pull Request
 
-### Creating a New Emoji Pack
+## 📋 Contribution Guidelines
 
-1. Fork this repository
-2. Create a new directory in `packs/` with your pack ID
-3. Add `pack.json` with emoji definitions:
+### Emoji Standards
+
+All emojis must meet these requirements:
+
+| Requirement | Specification |
+|------------|--------------|
+| **Format** | PNG or GIF only |
+| **Size** | 128x128 pixels (recommended) |
+| **Max file size** | 100KB |
+| **Filename** | Lowercase, numbers, hyphens, underscores only |
+| **Transparency** | PNG with RGBA recommended |
+
+### Adding a New Emoji Pack
+
+1. **Create a new directory** under `images/`:
+   ```bash
+   mkdir images/your-pack-name
+   ```
+
+2. **Add your emoji files** following the standards above
+
+3. **Create a `pack.json`** file in your pack directory:
    ```json
    {
-     "id": "your-pack-id",
      "name": "Your Pack Name",
-     "description": "Pack description",
-     "version": "1.0.0",
-     "emojis": [
-       {
-         "name": "emoji-name",
-         "aliases": ["alt1", "alt2"],
-         "imageUrl": "/images/your-pack-id/emoji-name.png",
-         "unicode": "😀"
-       }
-     ]
+     "description": "Description of your emoji pack",
+     "category": "general|developer|culture|business|workplace",
+     "author": "Your Name",
+     "tags": ["tag1", "tag2", "tag3"]
    }
    ```
-4. Add emoji images to `images/[your-pack-id]/`
-5. Update `packs.json` with your pack metadata
-6. Submit a Pull Request
 
-## Image Guidelines
+4. **Validate your pack locally**:
+   ```bash
+   pip install Pillow
+   python scripts/validate_pack.py
+   ```
 
-- **Format**: PNG with transparent background
-- **Size**: 128x128px recommended
-- **File size**: < 100KB per image
-- **Naming**: lowercase, use hyphens (no spaces)
+### Adding Emojis to Existing Pack
 
-## Quality Standards
+1. Add your emoji files to the appropriate pack directory
+2. Follow the naming and format standards
+3. Run validation before submitting
 
-- Emojis should be clear and recognizable at small sizes
-- No offensive or inappropriate content
-- Respect copyright and licensing
-- Original work or properly licensed content only
+## 🔄 Pull Request Process
 
-## Testing Your Changes
+1. **Fork & Clone**
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/slack-emoji-packs.git
+   cd slack-emoji-packs
+   ```
 
-1. Ensure all JSON files are valid
-2. Verify image paths are correct
-3. Test that images display properly
-4. Check file sizes are within limits
+2. **Create a feature branch**
+   ```bash
+   git checkout -b add-awesome-emojis
+   ```
 
-## Pull Request Process
+3. **Add your emojis and commit**
+   ```bash
+   git add images/
+   git commit -m "Add [pack-name] emoji pack with X emojis"
+   ```
 
-1. Describe what you're adding/changing
-2. Include screenshots of new emojis
-3. Mention any licensing information
-4. Wait for review and feedback
+4. **Push and create PR**
+   ```bash
+   git push origin add-awesome-emojis
+   ```
 
-## Code of Conduct
+5. **Wait for automated validation**
+   - Our GitHub Actions will automatically validate your emojis
+   - Check the PR comments for validation results
+   - Fix any issues reported
+
+## ✅ Validation Checks
+
+Our automated system checks for:
+
+- ✅ Valid file formats (PNG/GIF)
+- ✅ Appropriate file sizes (<100KB)
+- ✅ Correct image dimensions
+- ✅ Proper filename formatting
+- ✅ Pack metadata completeness
+
+## 🏷️ Categories
+
+Choose the most appropriate category for your pack:
+
+- **general** - General purpose emojis
+- **developer** - Programming and tech related
+- **culture** - Cultural and regional emojis
+- **business** - Business and workplace
+- **workplace** - Office and remote work
+
+## 📝 Pack Metadata Schema
+
+Each pack can have a `pack.json` file with this structure:
+
+```json
+{
+  "name": "Pack Display Name",
+  "description": "What this pack contains",
+  "category": "category-name",
+  "author": "Author Name",
+  "tags": ["array", "of", "tags"],
+  "featured": false,
+  "url": "https://optional-link.com"
+}
+```
+
+## 🤝 Code of Conduct
 
 - Be respectful and inclusive
-- Welcome feedback and suggestions
-- Help others when you can
-- Keep discussions professional
+- No offensive or inappropriate content
+- Respect copyright - only submit emojis you have rights to share
+- Keep emojis family-friendly
 
-## Questions?
-
-Open an issue if you have questions or need help!
-
-## License
+## 📜 License
 
 By contributing, you agree that your contributions will be licensed under the same license as this project (MIT).
+
+## 💡 Tips for Great Emojis
+
+1. **Keep it simple** - Emojis are small, so simple designs work best
+2. **Use transparency** - PNG with transparent backgrounds are versatile
+3. **Consider animations** - Animated GIFs add fun, but keep file size small
+4. **Test at small sizes** - Make sure your emoji is recognizable at 32x32
+5. **Be creative** - Unique emojis that express specific emotions or situations are most valuable
+
+## 🐛 Reporting Issues
+
+Found a problem? Please [open an issue](https://github.com/AsyncSite/slack-emoji-packs/issues) with:
+- Description of the problem
+- Steps to reproduce
+- Expected vs actual behavior
+
+## 📮 Questions?
+
+If you have questions about contributing, feel free to:
+- Open a [discussion](https://github.com/AsyncSite/slack-emoji-packs/discussions)
+- Check existing issues and PRs
+
+---
+
+Thank you for helping make our emoji collection awesome! 🎉

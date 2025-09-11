@@ -1,0 +1,35 @@
+{
+  "id": "work-from-home",
+  "name": "Work From Home",
+  "description": "Remote work essentials - pajamas, Zoom fatigue, pets, and home office life",
+  "category": "workplace",
+  "author": "AsyncSite",
+  "tags": [
+    "wfh",
+    "remote",
+    "home",
+    "zoom"
+  ],
+  "emojis": [
+    "background_noise",
+    "camera_off",
+    "coffee_break",
+    "home_office",
+    "mute_yourself",
+    "no_commute",
+    "pajamas",
+    "pet_cameo",
+    "snack_time",
+    "zoom_fatigue"
+  ],
+  "emojiCount": 10,
+  "preview": [
+    "pajamas",
+    "zoom_fatigue",
+    "pet_cameo",
+    "mute_yourself"
+  ],
+  "featured": true,
+  "createdAt": "2025-01-11",
+  "updatedAt": "2025-09-11"
+}

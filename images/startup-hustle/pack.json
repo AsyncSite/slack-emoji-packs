@@ -1,0 +1,38 @@
+{
+  "id": "startup-hustle",
+  "name": "Startup Hustle",
+  "description": "Essential emojis for startup life - funding, growth, pivots, and exits",
+  "category": "business",
+  "author": "AsyncSite",
+  "tags": [
+    "startup",
+    "business",
+    "entrepreneur",
+    "funding"
+  ],
+  "emojis": [
+    "bootstrapping",
+    "burn_rate",
+    "exit_strategy",
+    "growth_hacking",
+    "ipo",
+    "loading_spinner",
+    "mvp",
+    "party_parrot",
+    "pivot",
+    "rocket_launch",
+    "runway",
+    "series_a",
+    "unicorn"
+  ],
+  "emojiCount": 13,
+  "preview": [
+    "unicorn",
+    "burn_rate",
+    "rocket_launch",
+    "loading_spinner"
+  ],
+  "featured": true,
+  "createdAt": "2025-01-11",
+  "updatedAt": "2025-09-11"
+}

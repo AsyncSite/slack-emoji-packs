@@ -1,0 +1,45 @@
+{
+  "id": "korean-culture",
+  "name": "Korean Culture Pack",
+  "description": "Korean expressions, K-pop reactions, and cultural emojis",
+  "category": "culture",
+  "author": "AsyncSite",
+  "tags": [
+    "korean",
+    "kpop",
+    "culture",
+    "asia"
+  ],
+  "emojis": [
+    "aegyo",
+    "annyeong",
+    "bibimbap",
+    "daebak",
+    "fighting",
+    "gwiyomi",
+    "hanbok",
+    "heart-finger",
+    "heol",
+    "jjang",
+    "kamsahamnida",
+    "kimchi",
+    "kkkk",
+    "mianhae",
+    "noona",
+    "omo",
+    "oppa",
+    "ppalli",
+    "sarang",
+    "soju"
+  ],
+  "emojiCount": 20,
+  "preview": [
+    "fighting",
+    "heart-finger",
+    "daebak",
+    "omo"
+  ],
+  "featured": true,
+  "createdAt": "2024-01-10",
+  "updatedAt": "2025-09-11"
+}

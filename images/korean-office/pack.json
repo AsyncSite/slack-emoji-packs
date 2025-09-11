@@ -1,0 +1,33 @@
+{
+  "id": "korean-office",
+  "name": "Korean Office Culture",
+  "description": "Korean workplace essentials - \uc57c\uadfc, \ud68c\uc2dd, \uce7c\ud1f4, and office life",
+  "category": "culture",
+  "author": "AsyncSite",
+  "tags": [
+    "korean",
+    "office",
+    "culture",
+    "workplace"
+  ],
+  "emojis": [
+    "annual_leave",
+    "hoesik",
+    "kaltwae",
+    "maknae",
+    "salary_day",
+    "sangsa",
+    "team_building",
+    "yagun"
+  ],
+  "emojiCount": 8,
+  "preview": [
+    "yagun",
+    "hoesik",
+    "kaltwae",
+    "maknae"
+  ],
+  "featured": true,
+  "createdAt": "2025-01-11",
+  "updatedAt": "2025-09-11"
+}
