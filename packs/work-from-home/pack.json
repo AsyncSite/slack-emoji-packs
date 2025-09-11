@@ -1,0 +1,68 @@
+{
+  "id": "work-from-home",
+  "name": "Work From Home",
+  "description": "Remote work essentials - pajamas, Zoom fatigue, pets, and home office life",
+  "version": "1.0.0",
+  "emojis": [
+    {
+      "name": "pajamas",
+      "aliases": ["pjs", "wfh_outfit"],
+      "imageUrl": "/images/work-from-home/pajamas.png",
+      "unicode": "👔"
+    },
+    {
+      "name": "zoom_fatigue",
+      "aliases": ["video_tired", "meeting_exhausted"],
+      "imageUrl": "/images/work-from-home/zoom_fatigue.png",
+      "unicode": "😴"
+    },
+    {
+      "name": "mute_yourself",
+      "aliases": ["muted", "mic_off"],
+      "imageUrl": "/images/work-from-home/mute_yourself.png",
+      "unicode": "🔇"
+    },
+    {
+      "name": "camera_off",
+      "aliases": ["video_off", "no_camera"],
+      "imageUrl": "/images/work-from-home/camera_off.png",
+      "unicode": "📷"
+    },
+    {
+      "name": "pet_cameo",
+      "aliases": ["cat_zoom", "pet_interruption"],
+      "imageUrl": "/images/work-from-home/pet_cameo.png",
+      "unicode": "🐱"
+    },
+    {
+      "name": "home_office",
+      "aliases": ["wfh", "remote_work"],
+      "imageUrl": "/images/work-from-home/home_office.png",
+      "unicode": "🏠"
+    },
+    {
+      "name": "coffee_break",
+      "aliases": ["home_coffee", "couch_break"],
+      "imageUrl": "/images/work-from-home/coffee_break.png",
+      "unicode": "☕"
+    },
+    {
+      "name": "background_noise",
+      "aliases": ["noise", "distractions"],
+      "imageUrl": "/images/work-from-home/background_noise.png",
+      "unicode": "🔊"
+    },
+    {
+      "name": "snack_time",
+      "aliases": ["snacks", "munchies"],
+      "imageUrl": "/images/work-from-home/snack_time.png",
+      "unicode": "🍿"
+    },
+    {
+      "name": "no_commute",
+      "aliases": ["bed_to_desk", "short_commute"],
+      "imageUrl": "/images/work-from-home/no_commute.png",
+      "unicode": "🛏️"
+    }
+  ]
+}

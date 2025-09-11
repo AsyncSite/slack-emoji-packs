@@ -1,0 +1,68 @@
+{
+  "id": "startup-hustle",
+  "name": "Startup Hustle",
+  "description": "Essential emojis for startup life - funding, growth, pivots, and exits",
+  "version": "1.0.0",
+  "emojis": [
+    {
+      "name": "burn_rate",
+      "aliases": ["burning_cash", "spending"],
+      "imageUrl": "/images/startup-hustle/burn_rate.png",
+      "unicode": "💸"
+    },
+    {
+      "name": "pivot",
+      "aliases": ["change_direction", "iterate"],
+      "imageUrl": "/images/startup-hustle/pivot.png",
+      "unicode": "🔄"
+    },
+    {
+      "name": "runway",
+      "aliases": ["time_left", "cash_runway"],
+      "imageUrl": "/images/startup-hustle/runway.png",
+      "unicode": "🛬"
+    },
+    {
+      "name": "unicorn",
+      "aliases": ["billion_dollar", "success"],
+      "imageUrl": "/images/startup-hustle/unicorn.png",
+      "unicode": "🦄"
+    },
+    {
+      "name": "series_a",
+      "aliases": ["funding", "investment"],
+      "imageUrl": "/images/startup-hustle/series_a.png",
+      "unicode": "💰"
+    },
+    {
+      "name": "mvp",
+      "aliases": ["minimum_viable", "prototype"],
+      "imageUrl": "/images/startup-hustle/mvp.png",
+      "unicode": "📦"
+    },
+    {
+      "name": "growth_hacking",
+      "aliases": ["growth", "scale"],
+      "imageUrl": "/images/startup-hustle/growth_hacking.png",
+      "unicode": "📈"
+    },
+    {
+      "name": "bootstrapping",
+      "aliases": ["self_funded", "bootstrap"],
+      "imageUrl": "/images/startup-hustle/bootstrapping.png",
+      "unicode": "🥾"
+    },
+    {
+      "name": "ipo",
+      "aliases": ["public", "listing"],
+      "imageUrl": "/images/startup-hustle/ipo.png",
+      "unicode": "🔔"
+    },
+    {
+      "name": "exit_strategy",
+      "aliases": ["exit", "acquisition"],
+      "imageUrl": "/images/startup-hustle/exit_strategy.png",
+      "unicode": "🚪"
+    }
+  ]
+}

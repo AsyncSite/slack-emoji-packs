@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2024-01-10",
-  "totalPacks": 3,
+  "totalPacks": 6,
   "packs": [
     {
       "id": "dev-essentials",
@@ -41,6 +41,45 @@
       "featured": false,
       "createdAt": "2024-01-10",
       "updatedAt": "2024-01-10"
+    },
+    {
+      "id": "startup-hustle",
+      "name": "Startup Hustle",
+      "description": "Essential emojis for startup life - funding, growth, pivots, and exits",
+      "category": "business",
+      "emojiCount": 10,
+      "author": "AsyncSite",
+      "tags": ["startup", "business", "entrepreneur", "funding"],
+      "preview": ["unicorn", "burn_rate", "pivot", "mvp"],
+      "featured": true,
+      "createdAt": "2025-01-11",
+      "updatedAt": "2025-01-11"
+    },
+    {
+      "id": "work-from-home",
+      "name": "Work From Home",
+      "description": "Remote work essentials - pajamas, Zoom fatigue, pets, and home office life",
+      "category": "workplace",
+      "emojiCount": 10,
+      "author": "AsyncSite",
+      "tags": ["wfh", "remote", "home", "zoom"],
+      "preview": ["pajamas", "zoom_fatigue", "pet_cameo", "mute_yourself"],
+      "featured": true,
+      "createdAt": "2025-01-11",
+      "updatedAt": "2025-01-11"
+    },
+    {
+      "id": "korean-office",
+      "name": "Korean Office Culture",
+      "description": "Korean workplace essentials - 야근, 회식, 칼퇴, and office life",
+      "category": "culture",
+      "emojiCount": 8,
+      "author": "AsyncSite",
+      "tags": ["korean", "office", "culture", "workplace"],
+      "preview": ["yagun", "hoesik", "kaltwae", "maknae"],
+      "featured": true,
+      "createdAt": "2025-01-11",
+      "updatedAt": "2025-01-11"
     }
   ]
 }

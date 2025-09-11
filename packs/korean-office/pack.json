@@ -1,0 +1,56 @@
+{
+  "id": "korean-office",
+  "name": "Korean Office Culture",
+  "description": "Korean workplace essentials - 야근, 회식, 칼퇴, and office life",
+  "version": "1.0.0",
+  "emojis": [
+    {
+      "name": "yagun",
+      "aliases": ["night_work", "overtime", "야근"],
+      "imageUrl": "/images/korean-office/yagun.png",
+      "unicode": "🌙"
+    },
+    {
+      "name": "hoesik",
+      "aliases": ["company_dinner", "회식", "team_dinner"],
+      "imageUrl": "/images/korean-office/hoesik.png",
+      "unicode": "🍻"
+    },
+    {
+      "name": "kaltwae",
+      "aliases": ["leave_on_time", "칼퇴", "sharp_leave"],
+      "imageUrl": "/images/korean-office/kaltwae.png",
+      "unicode": "🔪"
+    },
+    {
+      "name": "salary_day",
+      "aliases": ["payday", "월급날", "money_day"],
+      "imageUrl": "/images/korean-office/salary_day.png",
+      "unicode": "💰"
+    },
+    {
+      "name": "sangsa",
+      "aliases": ["boss", "상사", "manager"],
+      "imageUrl": "/images/korean-office/sangsa.png",
+      "unicode": "👔"
+    },
+    {
+      "name": "maknae",
+      "aliases": ["youngest", "막내", "junior"],
+      "imageUrl": "/images/korean-office/maknae.png",
+      "unicode": "🐣"
+    },
+    {
+      "name": "annual_leave",
+      "aliases": ["vacation", "연차", "time_off"],
+      "imageUrl": "/images/korean-office/annual_leave.png",
+      "unicode": "✈️"
+    },
+    {
+      "name": "team_building",
+      "aliases": ["팀빌딩", "team_work", "unity"],
+      "imageUrl": "/images/korean-office/team_building.png",
+      "unicode": "🤝"
+    }
+  ]
+}
