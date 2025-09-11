@@ -1,7 +1,7 @@
 {
   "id": "korean-office",
   "name": "Korean Office Culture",
-  "description": "Korean workplace essentials - \uc57c\uadfc, \ud68c\uc2dd, \uce7c\ud1f4, and office life",
+  "description": "Korean workplace essentials - 야근, 회식, 칼퇴, and office life",
   "category": "culture",
   "author": "AsyncSite",
   "tags": [
@@ -24,10 +24,10 @@
   ],
   "emojiCount": 10,
   "preview": [
+    "clock_6pm.gif",
+    "overtime_meter.gif",
     "yagun.png",
-    "hoesik.png",
-    "kaltwae.png",
-    "maknae.png"
+    "hoesik.png"
   ],
   "featured": true,
   "createdAt": "2025-01-11",

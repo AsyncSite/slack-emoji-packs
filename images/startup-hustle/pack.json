@@ -27,10 +27,10 @@
   ],
   "emojiCount": 13,
   "preview": [
-    "unicorn.png",
-    "burn_rate.png",
     "rocket_launch.gif",
-    "loading_spinner.gif"
+    "loading_spinner.gif",
+    "unicorn.png",
+    "burn_rate.png"
   ],
   "featured": true,
   "createdAt": "2025-01-11",

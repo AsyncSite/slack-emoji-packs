@@ -53,10 +53,10 @@
   ],
   "emojiCount": 39,
   "preview": [
+    "loading_dots.gif",
+    "compiling.gif",
     "shipit.png",
-    "bug.png",
-    "fire.png",
-    "rocket.png"
+    "bug.png"
   ],
   "featured": true,
   "createdAt": "2024-01-10",

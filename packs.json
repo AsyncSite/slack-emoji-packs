@@ -17,10 +17,10 @@
         "development"
       ],
       "preview": [
+        "loading_dots.gif",
+        "compiling.gif",
         "shipit.png",
-        "bug.png",
-        "fire.png",
-        "rocket.png"
+        "bug.png"
       ],
       "featured": true,
       "createdAt": "2024-01-10",
@@ -40,10 +40,10 @@
         "asia"
       ],
       "preview": [
+        "bow.gif",
+        "soju_pour.gif",
         "fighting.png",
-        "heart-finger.png",
-        "daebak.png",
-        "omo.png"
+        "heart-finger.png"
       ],
       "featured": true,
       "createdAt": "2024-01-10",
@@ -52,7 +52,7 @@
     {
       "id": "korean-office",
       "name": "Korean Office Culture",
-      "description": "Korean workplace essentials - \uc57c\uadfc, \ud68c\uc2dd, \uce7c\ud1f4, and office life",
+      "description": "Korean workplace essentials - 야근, 회식, 칼퇴, and office life",
       "category": "culture",
       "emojiCount": 10,
       "author": "AsyncSite",
@@ -63,10 +63,10 @@
         "workplace"
       ],
       "preview": [
+        "clock_6pm.gif",
+        "overtime_meter.gif",
         "yagun.png",
-        "hoesik.png",
-        "kaltwae.png",
-        "maknae.png"
+        "hoesik.png"
       ],
       "featured": true,
       "createdAt": "2025-01-11",
@@ -75,7 +75,7 @@
     {
       "id": "korean-words",
       "name": "Korean Words",
-      "description": "Essential Korean words and expressions for daily communication - \ub124, \uc544\ub2c8, \uc644\ub8cc, \ud654\uc774\ud305 and more",
+      "description": "Essential Korean words and expressions for daily communication - 네, 아니, 완료, 화이팅 and more",
       "category": "culture",
       "author": "AsyncSite",
       "tags": [
@@ -89,9 +89,9 @@
       "featured": false,
       "preview": [
         "loading.gif",
-        "aha.png",
         "alert.gif",
-        "ani.png"
+        "ne.png",
+        "hwaiting.png"
       ],
       "createdAt": "2025-09-11",
       "updatedAt": "2025-09-11"
@@ -110,10 +110,10 @@
         "communication"
       ],
       "preview": [
-        "mindblown.png",
-        "facepalm.png",
-        "party-parrot.png",
-        "this-is-fine.png"
+        "clapping.gif",
+        "typing.gif",
+        "mind_blown.gif",
+        "thumbs_up.gif"
       ],
       "featured": false,
       "createdAt": "2024-01-10",
@@ -133,10 +133,10 @@
         "funding"
       ],
       "preview": [
-        "unicorn.png",
-        "burn_rate.png",
         "rocket_launch.gif",
-        "loading_spinner.gif"
+        "loading_spinner.gif",
+        "unicorn.png",
+        "burn_rate.png"
       ],
       "featured": true,
       "createdAt": "2025-01-11",
@@ -156,10 +156,10 @@
         "zoom"
       ],
       "preview": [
-        "pajamas.png",
-        "zoom_fatigue.png",
-        "pet_cameo.png",
-        "mute_yourself.png"
+        "cat_walking.gif",
+        "coffee_steam.gif",
+        "connection_lost.gif",
+        "pajamas.png"
       ],
       "featured": true,
       "createdAt": "2025-01-11",
