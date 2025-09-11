@@ -375,11 +375,48 @@ def create_warning_emoji():
     
     return img
 
+def create_python_emoji():
+    """Create a Python emoji - Python logo style snake"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Python blue
+    blue_color = (55, 118, 171)
+    # Python yellow
+    yellow_color = (255, 212, 59)
+    
+    # Left side (blue snake)
+    # Head
+    draw.ellipse([30, 25, 60, 55], fill=blue_color)
+    # Body curve
+    draw.arc([25, 45, 75, 95], start=90, end=270, fill=blue_color, width=15)
+    # Tail
+    draw.ellipse([30, 75, 60, 105], fill=blue_color)
+    
+    # Right side (yellow snake)
+    # Head
+    draw.ellipse([68, 25, 98, 55], fill=yellow_color)
+    # Body curve
+    draw.arc([53, 45, 103, 95], start=270, end=90, fill=yellow_color, width=15)
+    # Tail
+    draw.ellipse([68, 75, 98, 105], fill=yellow_color)
+    
+    # Eyes (white dots)
+    draw.ellipse([40, 35, 46, 41], fill='white')
+    draw.ellipse([82, 35, 88, 41], fill='white')
+    
+    # Eye pupils (black dots)
+    draw.ellipse([41, 36, 45, 40], fill='black')
+    draw.ellipse([83, 36, 87, 40], fill='black')
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create warning emoji
-    warning_img = create_warning_emoji()
-    warning_img.save(os.path.join(output_dir, "warning.png"))
-    print("Created: warning.png")
+    # Create python emoji
+    python_img = create_python_emoji()
+    python_img.save(os.path.join(output_dir, "python.png"))
+    print("Created: python.png")
