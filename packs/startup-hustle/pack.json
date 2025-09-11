@@ -63,6 +63,24 @@
       "aliases": ["exit", "acquisition"],
       "imageUrl": "/images/startup-hustle/exit_strategy.png",
       "unicode": "🚪"
+    },
+    {
+      "name": "loading_spinner",
+      "aliases": ["loading", "processing", "spinner"],
+      "imageUrl": "/images/startup-hustle/loading_spinner.gif",
+      "unicode": "⏳"
+    },
+    {
+      "name": "rocket_launch",
+      "aliases": ["launch", "takeoff", "deployment"],
+      "imageUrl": "/images/startup-hustle/rocket_launch.gif",
+      "unicode": "🚀"
+    },
+    {
+      "name": "party_parrot",
+      "aliases": ["celebrate", "party", "success"],
+      "imageUrl": "/images/startup-hustle/party_parrot.gif",
+      "unicode": "🦜"
     }
   ]
 }
