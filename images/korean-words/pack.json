@@ -1,7 +1,16 @@
 {
-  "name": "korean-words",
-  "title": "한국어 단어 모음 (Korean Words Collection)",
-  "description": "한국어 표현, 인터넷 용어, 게임 용어, 사무실 생활, 감정, 음식, SNS 밈, 액션/상태 등 포함한 포괄적인 한국어 이모지 팩 (759개)",
+  "id": "korean-words",
+  "name": "Korean Words",
+  "description": "Essential Korean words and expressions for daily communication - \ub124, \uc544\ub2c8, \uc644\ub8cc, \ud654\uc774\ud305 and more",
+  "category": "culture",
+  "author": "AsyncSite",
+  "tags": [
+    "korean",
+    "hangul",
+    "words",
+    "expressions",
+    "communication"
+  ],
   "emojis": [
     "1on1.png",
     "1on1_bg_white.png",
@@ -361,7 +370,7 @@
     "joesong.png",
     "jungle.png",
     "jungle_bg_white.png",
-    "jungyо.gif",
+    "jungy\u043e.gif",
     "just_do_it.png",
     "just_do_it_bg_white.png",
     "juui.gif",
@@ -763,37 +772,14 @@
     "youth_talk_bg_white.png",
     "yuyu.png"
   ],
-  "featured": true,
+  "emojiCount": 759,
   "preview": [
-    "daebak.gif",
-    "fighting.gif",
-    "ok.png",
-    "good.png",
-    "gg.png",
-    "jmt.png",
-    "sparkle_yes.gif",
-    "rainbow_fighting.gif"
+    "loading.gif",
+    "alert.gif",
+    "ne.png",
+    "hwaiting.png"
   ],
-  "tags": [
-    "korean",
-    "한국어",
-    "게임",
-    "사무실",
-    "감정",
-    "음식",
-    "SNS",
-    "밈",
-    "인터넷",
-    "MZ"
-  ],
-  "categories": {
-    "game_culture": "게임/인터넷 문화",
-    "office": "사무실 생활",
-    "emotions": "감정 표현",
-    "food_drink": "음식/음료",
-    "sns_meme": "SNS/밈",
-    "action_state": "액션/상태",
-    "special_effects": "특수 효과"
-  },
-  "emoji_count": 759
+  "featured": true,
+  "createdAt": "2025-09-11",
+  "updatedAt": "2025-09-11"
 }
