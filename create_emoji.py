@@ -295,11 +295,61 @@ def create_idea_emoji():
     
     return img
 
+def create_terminal_emoji():
+    """Create a terminal emoji - command line window"""
+    size = 128
+    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    
+    # Terminal window frame (dark gray)
+    frame_color = (64, 64, 64)
+    draw.rounded_rectangle([20, 25, 108, 103], radius=5, fill=frame_color)
+    
+    # Title bar (lighter gray)
+    titlebar_color = (128, 128, 128)
+    draw.rounded_rectangle([20, 25, 108, 40], radius=5, fill=titlebar_color)
+    # Fix bottom corners of title bar to be square
+    draw.rectangle([20, 35, 108, 40], fill=titlebar_color)
+    
+    # Window control buttons (red, yellow, green)
+    # Red close button
+    draw.ellipse([27, 30, 35, 38], fill=(255, 95, 86))
+    # Yellow minimize button
+    draw.ellipse([39, 30, 47, 38], fill=(255, 189, 46))
+    # Green maximize button
+    draw.ellipse([51, 30, 59, 38], fill=(40, 205, 65))
+    
+    # Terminal screen (black)
+    screen_color = (0, 0, 0)
+    draw.rectangle([25, 40, 103, 98], fill=screen_color)
+    
+    # Terminal text (green, like classic terminals)
+    text_color = (0, 255, 0)  # Bright green
+    
+    # Prompt symbol >
+    draw.text((30, 45), ">", fill=text_color)
+    
+    # Command text (simulated with rectangles for cursor effect)
+    # Simulate "npm run dev"
+    draw.rectangle([40, 48, 85, 50], fill=text_color)  # Command line
+    
+    # Output lines (dimmer green)
+    output_color = (0, 200, 0)
+    draw.rectangle([30, 60, 95, 62], fill=output_color)  # Line 1
+    draw.rectangle([30, 68, 80, 70], fill=output_color)  # Line 2
+    draw.rectangle([30, 76, 88, 78], fill=output_color)  # Line 3
+    
+    # Blinking cursor (bright green rectangle)
+    cursor_color = (0, 255, 0)
+    draw.rectangle([87, 48, 92, 50], fill=cursor_color)
+    
+    return img
+
 # Main execution
 if __name__ == "__main__":
     output_dir = "images/dev-essentials"
     
-    # Create idea emoji
-    idea_img = create_idea_emoji()
-    idea_img.save(os.path.join(output_dir, "idea.png"))
-    print("Created: idea.png")
+    # Create terminal emoji
+    terminal_img = create_terminal_emoji()
+    terminal_img.save(os.path.join(output_dir, "terminal.png"))
+    print("Created: terminal.png")
