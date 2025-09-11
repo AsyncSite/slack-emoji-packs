@@ -13,7 +13,10 @@
   "emojis": [
     "background_noise.png",
     "camera_off.png",
+    "cat_walking.gif",
     "coffee_break.png",
+    "coffee_steam.gif",
+    "connection_lost.gif",
     "home_office.png",
     "mute_yourself.png",
     "no_commute.png",
@@ -22,7 +25,7 @@
     "snack_time.png",
     "zoom_fatigue.png"
   ],
-  "emojiCount": 10,
+  "emojiCount": 13,
   "preview": [
     "pajamas.png",
     "zoom_fatigue.png",

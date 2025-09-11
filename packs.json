@@ -1,36 +1,14 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2025-09-11",
-  "totalPacks": 7,
+  "totalPacks": 6,
   "packs": [
-    {
-      "id": "korean-words",
-      "name": "Korean Words",
-      "description": "A collection of common Korean words and reactions.",
-      "category": "culture",
-      "emojiCount": 38,
-      "author": "AsyncSite",
-      "tags": [
-        "korean",
-        "words",
-        "reactions"
-      ],
-      "preview": [
-        "굿",
-        "확인",
-        "화이팅",
-        "ㅋㅋㅋ_ㅋㅋㅋ"
-      ],
-      "featured": true,
-      "createdAt": "2025-09-11",
-      "updatedAt": "2025-09-11"
-    },
     {
       "id": "dev-essentials",
       "name": "Developer Essentials",
       "description": "Essential emojis for developers - bugs, deployments, code reviews, and celebrations",
       "category": "developer",
-      "emojiCount": 34,
+      "emojiCount": 39,
       "author": "AsyncSite",
       "tags": [
         "coding",
@@ -53,7 +31,7 @@
       "name": "Korean Culture Pack",
       "description": "Korean expressions, K-pop reactions, and cultural emojis",
       "category": "culture",
-      "emojiCount": 20,
+      "emojiCount": 22,
       "author": "AsyncSite",
       "tags": [
         "korean",
@@ -76,7 +54,7 @@
       "name": "Korean Office Culture",
       "description": "Korean workplace essentials - \uc57c\uadfc, \ud68c\uc2dd, \uce7c\ud1f4, and office life",
       "category": "culture",
-      "emojiCount": 8,
+      "emojiCount": 10,
       "author": "AsyncSite",
       "tags": [
         "korean",
@@ -99,7 +77,7 @@
       "name": "Team Reactions",
       "description": "Express yourself better with these reaction emojis for team communication",
       "category": "general",
-      "emojiCount": 30,
+      "emojiCount": 35,
       "author": "AsyncSite",
       "tags": [
         "reactions",
@@ -145,7 +123,7 @@
       "name": "Work From Home",
       "description": "Remote work essentials - pajamas, Zoom fatigue, pets, and home office life",
       "category": "workplace",
-      "emojiCount": 10,
+      "emojiCount": 13,
       "author": "AsyncSite",
       "tags": [
         "wfh",

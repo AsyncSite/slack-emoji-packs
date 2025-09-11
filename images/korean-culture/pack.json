@@ -14,6 +14,7 @@
     "aegyo.png",
     "annyeong.png",
     "bibimbap.png",
+    "bow.gif",
     "daebak.png",
     "fighting.png",
     "gwiyomi.png",
@@ -30,9 +31,10 @@
     "oppa.png",
     "ppalli.png",
     "sarang.png",
-    "soju.png"
+    "soju.png",
+    "soju_pour.gif"
   ],
-  "emojiCount": 20,
+  "emojiCount": 22,
   "preview": [
     "fighting.png",
     "heart-finger.png",
