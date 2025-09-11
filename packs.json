@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2025-09-11",
-  "totalPacks": 6,
+  "totalPacks": 7,
   "packs": [
     {
       "id": "dev-essentials",
@@ -70,6 +70,30 @@
       ],
       "featured": true,
       "createdAt": "2025-01-11",
+      "updatedAt": "2025-09-11"
+    },
+    {
+      "id": "korean-words",
+      "name": "Korean Words",
+      "description": "Essential Korean words and expressions for daily communication - \ub124, \uc544\ub2c8, \uc644\ub8cc, \ud654\uc774\ud305 and more",
+      "category": "culture",
+      "author": "AsyncSite",
+      "tags": [
+        "korean",
+        "hangul",
+        "words",
+        "expressions",
+        "communication"
+      ],
+      "emojiCount": 28,
+      "featured": false,
+      "preview": [
+        "\ub124.png",
+        "\ud654\uc774\ud305.png",
+        "\uc644\ub8cc.png",
+        "loading.gif"
+      ],
+      "createdAt": "2025-09-11",
       "updatedAt": "2025-09-11"
     },
     {
